@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm" id="products-column">
+            <h1>Our products</h1>
+        </div>
+        <div class="col-sm" id="basket-column">
+            <h1>Create new product</h1>
+            <form>
+                <div class="form-group">
+                    <label for="product-name">Product name:</label>
+                    <input type="text" class="form-control" id="product-name" aria-describedby="emailHelp" >
+                </div>
+                <div class="form-group">
+                    <label for="product-price">Price:</label>
+                    <input type="number" class="form-control" id="product-price" >
+                </div>
+                <div class="form-check">
+                    <label for="product-stock">Count of product:</label>
+                    <input type="number" class="form-control" id="product-stock" >
+                </div>
+                <button type="button" class="btn btn-primary" id="create-product-button">Create product</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/webjars/jquery/jquery.min.js"></script>
+<script src="/webjars/sockjs-client/sockjs.min.js"></script>
+<script src="/webjars/stomp-websocket/stomp.min.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
